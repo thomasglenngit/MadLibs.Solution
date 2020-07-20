@@ -18,6 +18,8 @@ namespace MadLibs.Controllers
       myLetterVariable.Recipient = "Lina";
       myLetterVariable.Destination = "Brazil";
       myLetterVariable.Sender = "Jasmine";
+      myLetterVariable.Animal = "Brazil";
+      myLetterVariable.Exclamation = "Jasmine";
       return View(myLetterVariable);
     }
 
@@ -25,12 +27,14 @@ namespace MadLibs.Controllers
     public ActionResult Form() { return View(); }
     
     [Route("/postcard")]
-    public ActionResult Postcard(string recipient, string sender, string destination)
+    public ActionResult Postcard(string recipient, string sender, string destination, string animal, string exclamation)
     {
       LetterVariable myLetterVariable = new LetterVariable();
       myLetterVariable.Recipient = recipient;
       myLetterVariable.Destination = destination;
       myLetterVariable.Sender = sender;
+      myLetterVariable.Animal = animal;
+      myLetterVariable.Exclamation = exclamation;
       return View(myLetterVariable);
     }
   }
