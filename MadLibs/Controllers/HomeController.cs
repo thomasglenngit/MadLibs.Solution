@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using MadLibs.Models;
 
 namespace MadLibs.Controllers
 {
@@ -15,6 +16,7 @@ namespace MadLibs.Controllers
     {
       LetterVariable myLetterVariable = new LetterVariable();
       myLetterVariable.Recipient = "Lina";
+      myLetterVariable.Destination = "Brazil";
       myLetterVariable.Sender = "Jasmine";
       return View(myLetterVariable);
     }
@@ -23,10 +25,11 @@ namespace MadLibs.Controllers
     public ActionResult Form() { return View(); }
     
     [Route("/postcard")]
-    public ActionResult Postcard(string recipient, string sender)
+    public ActionResult Postcard(string recipient, string sender, string destination)
     {
       LetterVariable myLetterVariable = new LetterVariable();
       myLetterVariable.Recipient = recipient;
+      myLetterVariable.Destination = destination;
       myLetterVariable.Sender = sender;
       return View(myLetterVariable);
     }
