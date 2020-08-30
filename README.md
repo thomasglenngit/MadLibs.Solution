@@ -40,6 +40,8 @@ _**No known bugs as of:** _
 # **❤️Contributors**
 
 [<img src='https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/joseph-pearce.jpeg' width='160px;'/><br /><sub><b>Joseph Pearce</b></sub>](https://www.linkedin.com/in/pjosephpearce/)<br />
+<br>
+
 [<img src='https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/thomas-glenn.jpeg' width='160px;'/><br /><sub><b>Thomas Glenn</b></sub>](https://www.linkedin.com/in/glennergy/)
 
 <br>
